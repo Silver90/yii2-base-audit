@@ -14,3 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <code><?= __FILE__ ?></code>
 </div>
+
+<script>
+    alrt('Hello, World!')
+</script>

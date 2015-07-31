@@ -10,6 +10,9 @@ use app\assets\AppAsset;
 
 AppAsset::register($this);
 ?>
+<?php
+\bedezign\yii2\audit\web\JSLoggingAsset::register($this);
+?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
@@ -38,6 +41,8 @@ AppAsset::register($this);
                     ['label' => 'Home', 'url' => ['/site/index']],
                     ['label' => 'About', 'url' => ['/site/about']],
                     ['label' => 'Contact', 'url' => ['/site/contact']],
+                    ['label' => 'Provatrail', 'url' => ['/trail']],
+                    ['label' => 'Audit', 'url' => ['/audit']],
                     Yii::$app->user->isGuest ?
                         ['label' => 'Login', 'url' => ['/site/login']] :
                         ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',

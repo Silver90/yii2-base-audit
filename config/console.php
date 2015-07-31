@@ -12,6 +12,7 @@ return [
     'controllerNamespace' => 'app\commands',
     'modules' => [
         'gii' => 'yii\gii\Module',
+        'audit' => 'bedezign\yii2\audit\Audit',
     ],
     'components' => [
         'cache' => [

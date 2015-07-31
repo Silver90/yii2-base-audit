@@ -76,4 +76,12 @@ class LoginForm extends Model
 
         return $this->_user;
     }
+
+    public function behaviors()
+    {
+        return [
+            'bedezign\yii2\audit\AuditTrailBehavior',
+
+        ];
+    }
 }
