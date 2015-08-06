@@ -103,7 +103,7 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
     public function behaviors()
     {
         return [
-            'bedezign\yii2\audit\AuditTrailBehavior',
+
         ];
     }
 }

@@ -16,10 +16,6 @@ $config = [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
-        'user' => [
-            'identityClass' => 'app\models\User',
-            'enableAutoLogin' => true,
-        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
             'class' => '\bedezign\yii2\audit\components\web\ErrorHandler',
@@ -45,6 +41,9 @@ $config = [
     'params' => $params,
 
     'modules' => [
+        'user' => [
+            'class' => 'dektrium\user\Module',
+        ],
         'audit' => [
             'class' => 'bedezign\yii2\audit\Audit',
             // the layout that should be applied for views within this module

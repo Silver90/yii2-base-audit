@@ -19,7 +19,8 @@
         "yiisoft/yii2-bootstrap": "*",
       "yiisoft/yii2-swiftmailer": "*",
       "bedezign/yii2-audit": "^1.0",
-      "amnah/yii2-user": "~3.0"
+      "amnah/yii2-user": "~3.0",
+      "dektrium/yii2-user": "0.9.*@dev"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
