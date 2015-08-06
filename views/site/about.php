@@ -18,3 +18,13 @@ $this->params['breadcrumbs'][] = $this->title;
 <script>
     alrt('Hello, World!')
 </script>
+
+<?php
+Yii::$app->mailer->compose()
+    ->setFrom('from@domain.com')
+    ->setTo('to@domain.com')
+    ->setSubject('Message subject')
+    ->setTextBody('Plain text content')
+    ->setHtmlBody('<b>HTML content</b>')
+    ->send();
+?>

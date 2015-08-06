@@ -70,6 +70,8 @@ $config = [
             // If the value is a simple string, it is the identifier of an internal to activate (with default settings)
             // If the entry is a '<key>' => '<string>|<array>' it is a new panel. It can optionally override a core panel or add a new one.
             'panels' => [
+                'audit/javascript',
+                'audit/mail',
                 'audit/request',
                 'audit/error',
                 'audit/trail',
